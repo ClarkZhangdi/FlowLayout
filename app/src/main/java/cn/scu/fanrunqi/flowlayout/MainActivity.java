@@ -43,7 +43,10 @@ public class MainActivity extends Activity {
                     int i = (int) v.getTag();
                     addViewToFlowlayout1(i);
                     rl2.setBackgroundResource(R.drawable.flow_layout_disable_bg);
+<<<<<<< HEAD
                     rl2.setClickable(false);
+=======
+>>>>>>> origin/master
                 }
             });
 
@@ -63,7 +66,10 @@ public class MainActivity extends Activity {
                 int i = (int) v.getTag();
                 idFlowlayout1.removeView(v);
                 View view = idFlowlayout2.getChildAt(i);
+<<<<<<< HEAD
                 view.setClickable(true);
+=======
+>>>>>>> origin/master
                 view.setBackgroundResource(R.drawable.flow_layout_bg);
             }
         });
