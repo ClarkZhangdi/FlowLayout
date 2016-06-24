@@ -128,12 +128,9 @@ public class FlowLayout extends ViewGroup
             int childWidth = child.getMeasuredWidth();
             int childHeight = child.getMeasuredHeight();
 
-            lineWidth += childWidth + lp.leftMargin + lp.rightMargin;
-            lineHeight = Math.max(lineHeight, childHeight + lp.topMargin+ lp.bottomMargin);
-            lineViews.add(child);
 
             // 换行，在onMeasure中childWidth是加上Margin值的
-            if (childWidth + lineWidth + lp.leftMargin + lp.rightMargin > width - getPaddingLeft() - getPaddingRight())
+            if (lineWidth + childWidth + lp.leftMargin + lp.rightMargin > width - getPaddingLeft() - getPaddingRight())
             {
                 // 记录行高
                 mLineHeight.add(lineHeight);
@@ -146,6 +143,11 @@ public class FlowLayout extends ViewGroup
                 // 新行的View集合
                 lineViews = new ArrayList<View>();
             }
+                //不管换不换行都要处理当前子view
+                lineWidth += childWidth + lp.leftMargin + lp.rightMargin;
+                lineHeight = Math.max(lineHeight, childHeight + lp.topMargin+ lp.bottomMargin);
+                lineViews.add(child);
+
 
         }
         // 处理最后一行
