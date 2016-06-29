@@ -5,3 +5,8 @@
 效果图：
 
 ![这里写图片描述](http://fanrunqi.github.io/images/FlowLayout/1.gif)
+
+
+### Thanks
+
+> Everyone who has contributed code and reported issues!
