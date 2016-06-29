@@ -1,6 +1,6 @@
 # FlowLayout
 
-> This is a demo , hope can inspire you.
+> This is a demo , wish can inspire you.
 
 The effect：
 
