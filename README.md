@@ -4,7 +4,7 @@
 
 The effect：
 
-![FlowLayout](http://fanrunqi.github.io/images/FlowLayout/1.gif)
+![FlowLayout](https://raw.githubusercontent.com/fanrunqi/FlowLayout/master/screenshots/1.gif)
 
 
 ### Thanks
